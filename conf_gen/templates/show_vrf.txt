@@ -1,0 +1,4 @@
+ip route vrf {{ name_vrf }}
+show arp vrf {{ name_vrf }}
+
+

@@ -1,0 +1,11 @@
+/configure service vprn {{ vpn_id }} name {{ name_vrf }} customer 1 create
+/configure service vprn {{ vpn_id }} description {{ description }}
+/configure service vprn {{ vpn_id }} route-distinguisher {{ rd }}
+/configure service vprn {{ vpn_id }} auto-bind-tunnel resolution-filter ldp
+/configure service vprn {{ vpn_id }} vrf-target target:{{ rt_import }}
+/configure service vprn {{ vpn_id }} auto-bind-tunnel resolution-filter 
+/configure service vprn {{ vpn_id }} no shutdown
+
+
+
+
