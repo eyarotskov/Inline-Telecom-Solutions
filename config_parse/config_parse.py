@@ -147,7 +147,7 @@ def l2_epipe(filename):
               writer.writerow([" "] + [" "] + [" "] + [" "] + [" "] + [" "] + [" "] + [" "] + [" "] + [inter_xconnect] + [vrf_xconnect]+ [vrf_xconnect] + [" "] + [ip_mask_xconnect] + [vc_id_xconnect])
 
 if __name__ == "__main__":
-    filename = find_config(folder)
+    filename = find_config(os_path)
     get_ip_from_cfg(filename)
     l2_vfi(filename)
     l2_epipe(filename)
