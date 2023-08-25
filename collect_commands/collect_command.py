@@ -19,7 +19,6 @@ def collect_command():
                 folder = os_path + "\\" + dev['host']
                 if not os.path.exists(folder):
                     folder = os.makedirs(os_path +   "\\" + dev['host'])
-                    print(dev.values())
                 for command in commands:
                     with open(str(folder) + "\\" + command +  ".txt", "w") as a:
                         a.write(dev['host'] + ">" +command + "\n" + str(send_show_command(dev, command) + "\n" +dev['host'] + ">"))
